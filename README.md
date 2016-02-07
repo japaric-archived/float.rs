@@ -1,16 +1,23 @@
-[![Build Status][status]](https://travis-ci.org/japaric/float.rs)
+[![Travis](https://travis-ci.org/japaric/float.rs.svg?branch=master)](https://travis-ci.org/japaric/float.rs)
 
-# `float.rs`
+# `Floaty`
 
-A trait that abstracts over the common functionality of `f32` and `f64`
+> A trait that abstracts over the common functionality of `f32` and `f64`
 
-# [Documentation][docs]
+## [Docs](http://japaric.github.io/float.rs/floaty/)
 
-# License
+## License
 
-float.rs is dual licensed under the Apache 2.0 license and the MIT license.
+Licensed under either of
 
-See LICENSE-APACHE and LICENSE-MIT for more details.
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or
+  http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
-[docs]: http://japaric.github.io/float.rs/float/
-[status]: https://travis-ci.org/japaric/float.rs.svg?branch=master
+at your option.
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the
+work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any
+additional terms or conditions.
