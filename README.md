@@ -1,4 +1,5 @@
 [![Travis](https://travis-ci.org/japaric/float.rs.svg?branch=master)](https://travis-ci.org/japaric/float.rs)
+[![crates.io](http://meritbadge.herokuapp.com/floaty)](https://crates.io/crates/floaty)
 
 # `Floaty`
 
