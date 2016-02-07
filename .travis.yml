@@ -1,18 +1,28 @@
-language: rust
 sudo: false
+language: rust
+
+rust:
+  - stable
+  - beta
+  - nightly
+
+before_script:
+  - |
+      pip install 'travis-cargo<0.2' --user &&
+      export PATH=$HOME/.local/bin:$PATH
+
+script:
+  - |
+      travis-cargo build &&
+      travis-cargo test &&
+      travis-cargo --only stable doc
+
+after_success:
+  - travis-cargo --only stable doc-upload
 
 env:
   global:
     - secure: JIDXbGqJq9gSYTLfF6rchxD7TxGmbxV1HRCVlJJkNLmPNmJmGgoYZ7LiUPs5vx/4Ah4FLU3HY2kxh05ephmworRht9rWLBegmGZJtAkll3FdpetRldQ0DEdMTz75XbMCCes/wWAHoam9yG9RzIZC9Bw36rojXppZhTCGw28OCpg=
-
-script:
-  - cargo build --verbose
-  - cargo test --verbose
-  - cargo doc --verbose
-  - ./check-line-length.sh
-
-after_success:
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && bash upload-docs.sh'
 
 branches:
   only: master
