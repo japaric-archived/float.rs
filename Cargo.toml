@@ -1,11 +1,15 @@
 [package]
 authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+description = "A trait that abstracts over the common functionality of f32 and f64"
+documentation = "http://japaric.github.io/float.rs/floaty/"
+keywords = ["float", "trait", "generic"]
 license = "MIT OR Apache-2.0"
 name = "floaty"
+repository = "https://github.com/japaric/float.rs"
 version = "0.1.0"
+
+[dependencies]
+cast = "0.1.0"
 
 [features]
 unstable = []
-
-[dependencies.cast]
-git = "https://github.com/japaric/cast.rs"
